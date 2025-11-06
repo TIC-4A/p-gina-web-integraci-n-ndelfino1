@@ -41,6 +41,7 @@ font-size: 1.2em;
 display: flex;
 align-items: center;
 }
+
 .search-bar input {
 border: none;
 padding: 8px 10px;

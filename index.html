@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robotarg</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">PROYECTO ARG</div>
+<div class="search-bar">
+<input type="text" placeholder="Buscar">
+<button><img src="lupa.jpg" alt="Buscar"></button>
+</div>
+</header>
+
+<main id="view-1">
+<section class="top-left">
+<h1>Robotarg</h1>
+<p>Nuestro proyecto simula un semáforo utilizando una tarjeta Micro:bit que se activa exclusivamente por sonido.
+El micrófono interno capta ruidos fuertes (aplausos o gritos).
+Una variable rastrea el estado actual (color) para decidir el siguiente paso.
+Cada ruido fuerte hace avanzar el semáforo en su secuencia.
+1er Sonido: Enciende Verde.
+2do Sonido: Cambia a Amarillo (tras 1 segundo).
+3er Sonido: Enciende Rojo.
+Los LEDs (actuadores externos controlados por los pines P0, P1, P2) son los que se encienden o apagan para mostrar el color.
+</p>
+</section>
+<section class="top-right">
+<img src="robotnegro.png" alt="Robot 1">
+<h2>¿Qué es un robot?</h2>
+<p>Un robot es una máquina automática y programable, con capacidades mecánicas, electrónicas y de software, diseñada para realizar operaciones, manipular objetos o interactuar con su entorno.
+El término proviene de la palabra checa "robota", que significa "trabajo duro" o "labor forzada"</p>
+</section>
+<section class="bottom-left purple-bg">
+<h2>¿Cómo funciona?</h2>
+<p>Un robot funciona a través de tres pilares fundamentales: percibir, procesar y actuar.
+Los sensores captan información del entorno (como luz, temperatura o presión) y la envían al controlador (el "cerebro").
+Este procesa los datos utilizando programas y algoritmos para tomar una decisión.
+<br><br>
+1. Percibir
+<br>
+Los sensores captan datos del entorno, transformando magnitudes físicas (luz, sonido, temperatura) en información que la computadora puede entender.
+Los sensores pueden incluir cámaras, micrófonos, sensores de presión, de posición y de tacto.
+<br><br>
+2. Pensar
+<br>
+La información de los sensores se envía al controlador, que actúa como el cerebro del robot.
+El controlador procesa los datos basándose en algoritmos y programas predefinidos.
+A partir de esta información, el controlador toma decisiones sobre cómo actuar para completar su tarea.
+<br><br>
+3. Actuar
+<br>
+Una vez que el controlador ha tomado una decisión, envía señales a los actuadores.
+Los actuadores, como motores y engranajes, convierten la energía eléctrica en movimiento físico para realizar la acción.
+</p>
+</section>
+</main>
+
+<main id="view-2" class="hidden">
+<section class="top-left">
+<h1>Robotarg</h1>
+</section>
+<section class="top-right">
+<h2>Articulos de importantes robots</h2>
+<a href="https://www.britannica.com/technology/robot-technology" target="_blank" class="read-more-link">
+    <button class="read-more-button">LEER MÁS</button>
+</a>
+</section>
+<section class="bottom-left">
+<h2>¿Qué funciones tiene?</h2>
+<p>
+Funciones principales
+<br>
+Manipulación: Mover materiales pesados, piezas pequeñas o realizar tareas repetitivas como el ensamblaje.
+Fabricación: Soldar, pintar, cortar y desbarbar piezas con precisión.
+Logística: Mover cajas, transportar materiales y realizar operaciones de picking (selección de artículos).
+Inspección de calidad: Usar sensores y sistemas de visión para detectar defectos en los productos y verificar parámetros.
+<br><br>
+Funciones en otros sectores
+<br>
+Servicios: Realizar tareas como tomar pedidos en restaurantes, entregar servicios en hoteles o realizar entregas a domicilio.
+Medicina: Ayudar en cirugías o realizar tareas de laboratorio.
+Entretenimiento: Actuar en espectáculos, bailar, cantar o interactuar con el público en parques temáticos.
+Exploración: Realizar misiones en entornos peligrosos o remotos, como el espacio exterior.
+</p>
+</section>
+<section class="bottom-center purple-bg">
+<h2>¿Cómo influye en el entorno?</h2>
+<p>La robótica puede mejorar la sostenibilidad a través de la eficiencia energética y la reducción de residuos, y en la conservación ambiental mediante el monitoreo y la limpieza de ecosistemas
+<br><br>
+Impactos positivos
+<br>
+Sostenibilidad ambiental: La precisión de los robots reduce el desperdicio de materiales y la generación de residuos.
+Conservación y monitoreo: Los drones y robots especializados pueden rastrear emisiones, analizar la calidad del agua y limpiar desechos en ecosistemas.
+Eficiencia energética: La automatización puede mejorar la eficiencia de procesos industriales, como la combustión de carbón.
+Mejora de condiciones laborales: Los robots pueden realizar trabajos peligrosos, monótonos o físicamente agotadores, reduciendo riesgos para los humanos.
+Avances en salud y educación: La robótica impulsa la telemedicina, como la endoscopia remota, y la robótica educativa fomenta habilidades en niños.
+</p>
+</section>
+<section class="bottom-right">
+<img src="robotblanco.png" alt="Robot 2">
+<h3>CONOCÉ MÁS SOBRE NUESTRO PROYECTO</h3>
+<a href="Robotarg.pdf" target="_blank" class="pdf-link">
+    <button class="read-more-button pdf-button">Ver/Descargar PDF</button>
+</a>
+</section>
+</main>
+
+<div class="button-container">
+<button id="toggleView">Cambiar Vista</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

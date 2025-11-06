@@ -1,3 +1,46 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f0f0f0;
+display: flex;
+justify-content: center;
+align-items: flex-start; /* Alinea al inicio para que el contenido no esté centrado verticalmente */
+min-height: 100vh;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.container {
+background-color: #fff;
+width: 90%;
+max-width: 1200px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Dos columnas para la cabecera */
+grid-template-rows: auto 1fr auto; /* Cabecera, contenido principal, botón */
+gap: 1px; /* Espacio mínimo entre las secciones */
+border: 1px solid #ddd;
+}
+
+header {
+background-color: #7b29e0; /* Color morado */
+color: white;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+grid-column: 1 / -1; /* Ocupa todas las columnas */
+}
+
+.logo {
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+}
 .search-bar input {
 border: none;
 padding: 8px 10px;
